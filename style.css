@@ -1,0 +1,103 @@
+ body {
+            background-color: antiquewhite;
+        }
+
+        main {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        section {
+            background-color: rgb(216, 176, 147);
+            border-radius: 50px 50px 0 0;
+            box-shadow: 0 0 20px black;
+            height: 100%;
+            position: relative;
+            padding: 30px;
+            right: 20%;
+            top: 0;
+            width: 70%;
+        }
+
+        aside {
+            background-color: rgb(241, 207, 183);
+            border-radius: 50px;
+            box-shadow: 0 0 20px black;
+            bottom: 0;
+            height: 100%;
+            padding: 20px;
+            position: fixed;
+            right: 20px;
+            width: 35%;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+        }
+
+
+
+        .cabecera {
+            background-color: antiquewhite;
+            border-radius: 5px;
+            box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+            margin-bottom: 30px;
+            margin: 0px;
+            padding-top: 10px;
+            padding-left: 20px;
+            text-align: left;
+        }
+
+        .logo {
+            display: flex;
+            justify-content: left;
+            margin-left: 30px;
+
+        }
+
+        #contProductos {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-auto-flow: row;
+            column-gap: 30px;
+            row-gap: 20px;
+        }
+
+        .totales {
+            text-align: right;
+        }
+
+        #total {
+            background-color: rgb(195, 167, 148);
+            border-radius: 5px;
+            padding: 0 15px 0 0;
+
+        }
+
+        #totalIva {
+            background-color: rgb(195, 167, 148);
+            border-radius: 5px;
+            padding: 0 15px 0 0;
+
+        }
+
+        @media (max-width: 1200px) {
+            #contProductos {
+                display: grid;
+                grid-template-columns: auto auto;
+                grid-auto-flow: row;
+                column-gap: 30px;
+                row-gap: 20px;
+            }
+        }
+
+        @media (max-width: 800px) {
+            #contProductos {
+                display: grid;
+                grid-template-columns: auto;
+                grid-auto-flow: row;
+                column-gap: 30px;
+                row-gap: 20px;
+            }
+        }
